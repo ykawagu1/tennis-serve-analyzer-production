@@ -1,0 +1,84 @@
+{
+  "faq_title": "Perguntas Frequentes",
+  "faq_items": [
+    {
+      "q": "O que posso fazer com este aplicativo?",
+      "a": "Você pode gravar seu saque de tênis em vídeo, e a IA analisará automaticamente sua técnica, dará uma pontuação e fornecerá uma dica pontual. Você também pode compartilhar facilmente seu cartão de pontuação nas redes sociais. A versão premium oferece conselhos de IA mais detalhados."
+    },
+    {
+      "q": "Que tipo de vídeo funciona melhor para a análise da IA?",
+      "a": "Recomendamos um vídeo que mostre claramente todo o seu corpo enquanto você saca sozinho. Posicione a câmera na diagonal atrás da linha de serviço para obter melhores resultados."
+    },
+    {
+      "q": "Quantos saques posso analisar?",
+      "a": "Usuários gratuitos podem analisar até 3 saques por dia. Usuários premium podem analisar quantos saques quiserem, sem limite diário."
+    },
+    {
+      "q": "Quais são as diferenças entre as versões gratuita e premium?",
+      "a": "A versão gratuita exibe anúncios e possui um limite diário de análises. A versão premium remove os anúncios, permite análises ilimitadas, desbloqueia skins premium e oferece conselhos de IA detalhados."
+    },
+    {
+      "q": "Quanto custa o plano premium e como faço o pagamento?",
+      "a": "O plano premium custa €2 por mês (ou €19 por ano com desconto) ou R$10 por mês (ou R$95 por ano com desconto). O pagamento é feito por assinatura através da App Store ou Google Play."
+    },
+    {
+      "q": "O que devo fazer se os conselhos da IA ou as pontuações não forem exibidos?",
+      "a": "Se houver atraso na exibição dos conselhos ou das pontuações, pode ser devido às condições da rede ou à carga do servidor. Se reiniciar o aplicativo não ajudar, entre em contato com o suporte."
+    },
+    {
+      "q": "Onde os vídeos enviados e os resultados das análises são salvos?",
+      "a": "Os vídeos enviados e os resultados das análises não são salvos. Eles são excluídos automaticamente."
+    },
+    {
+      "q": "Como posso compartilhar os resultados da análise com amigos ou treinadores?",
+      "a": "Você pode compartilhar facilmente os resultados usando o botão 'Compartilhar' na tela de resultados via redes sociais, e-mail, LINE, etc. Também é possível salvar a imagem do cartão de pontuação no seu dispositivo e compartilhá-la."
+    },
+    {
+      "q": "O que devo fazer se o aplicativo não estiver funcionando corretamente ou se eu encontrar um erro?",
+      "a": "Entre em contato conosco pela tela de 'Configurações' ou pelo formulário de contato na página de ajuda. Responderemos rapidamente."
+    }
+  ],
+  "home_title": "Analisador de Saque de Tênis",
+  "home_select_video": "Selecionar um vídeo",
+  "home_select_from_gallery": "Escolher vídeo da galeria",
+  "home_take_photo": "Gravar com a câmera",
+  "home_start_analysis": "Iniciar análise",
+  "home_reset": "Redefinir",
+  "home_ready": "Pronto para análise",
+  "home_selected_file": "Arquivo selecionado:",
+  "home_input_concern_label": "Descreva suas dúvidas aqui (opcional)",
+  "home_input_concern_label2":"Suas preocupações (opcional)",
+  "home_premium_label": "Premium (Dicas detalhadas da IA)",
+  "home_free_label": "Modo grátis (Apenas análise simples)",
+  "home_guide": "Guia de gravação",
+  "home_note": "Formatos suportados: MP4, AVI, MOV, MKV (Máx 100MB)",
+  "home_free_remaining": "Análises gratuitas restantes hoje:",
+  "home_analyzing": "Analisando...",
+  "home_invalid_result": "Formato de resultado inválido",
+  "home_error_analyze": "Ocorreu um erro durante a análise. Por favor, tente novamente.",
+  "home_error_retry": "Por favor, tente novamente",
+  "home_guide_footer": "Para uma análise precisa, siga o guia.",
+  
+  "skin_simple": "Simples",
+  "skin_genz": "Pop",
+  "skin_earth": "Terra",
+  "skin_mint": "Hortelã",
+  "skin_retro": "Retrô",
+  "skin_gradient_blue": "Gradiente Azul",
+  "skin_gradient_red": "Gradiente Vermelho",
+  "skin_gradient_purple": "Gradiente Roxo",
+  "skin_gradient_green": "Gradiente Verde",
+  "skin_gradient_sunset": "Gradiente Pôr do Sol",
+  "skin_gradient_rainbow": "Gradiente Arco-Íris",
+  "skin_gradient_neon": "Neon Pulsante",
+  "skin_gradient_strobe": "Neon Estroboscópico",
+  "skin_gradient_aurora": "Aurora Boreal",
+  "skin_gradient_candy": "Candy Pop",
+  
+  "settings_header": "Configurações",
+  "tab_home": "Início",
+  "tab_settings": "Configurações",
+  "result_header": "Resultado",
+  "faq_header": "Perguntas Frequentes (FAQ)",
+  "detailed_advice_premium_only": "Conselhos detalhados estão disponíveis apenas para usuários premium." 
+}

@@ -1,0 +1,84 @@
+{
+  "faq_title": "Preguntas frecuentes",
+  "faq_items": [
+    {
+      "q": "¿Qué puedo hacer con esta aplicación?",
+      "a": "Puedes grabar tu servicio de tenis en video, y la IA analizará automáticamente tu forma, la calificará y te dará un consejo puntual. También puedes compartir fácilmente tu tarjeta de puntuación en redes sociales. La versión premium ofrece consejos de IA más detallados."
+    },
+    {
+      "q": "¿Qué tipo de video funciona mejor para el análisis de IA?",
+      "a": "Recomendamos un video que muestre claramente todo tu cuerpo mientras sirves solo. Coloca la cámara en diagonal detrás de la línea de servicio para obtener los mejores resultados."
+    },
+    {
+      "q": "¿Cuántos servicios puedo analizar?",
+      "a": "Los usuarios gratuitos pueden analizar hasta 3 servicios por día. Los miembros premium pueden analizar tantos servicios como quieran, sin límite diario."
+    },
+    {
+      "q": "¿Cuáles son las diferencias entre la versión gratuita y la versión premium?",
+      "a": "La versión gratuita muestra anuncios y tiene un límite diario de análisis. La versión premium elimina los anuncios, permite análisis ilimitados, desbloquea skins premium y ofrece consejos de IA detallados."
+    },
+    {
+      "q": "¿Cuánto cuesta el plan premium y cómo pago?",
+      "a": "El plan premium cuesta 2 € al mes (o 18 € al año con descuento). El pago se realiza mediante suscripción a través de la App Store o Google Play."
+    },
+    {
+      "q": "¿Qué hago si los consejos de IA o las puntuaciones no se muestran?",
+      "a": "Si hay un retraso en mostrar los consejos o las puntuaciones, puede deberse a las condiciones de la red o la carga del servidor. Si reiniciar la aplicación no ayuda, por favor contacta con soporte."
+    },
+    {
+      "q": "¿Dónde se guardan los videos subidos y los resultados del análisis?",
+      "a": "Los videos subidos y los resultados del análisis no se guardan. Se eliminan automáticamente."
+    },
+    {
+      "q": "¿Cómo puedo compartir los resultados del análisis con amigos o entrenadores?",
+      "a": "Puedes compartir fácilmente los resultados usando el botón 'Compartir' en la pantalla de resultados a través de redes sociales, correo electrónico, LINE, etc. También puedes guardar la imagen de la tarjeta de puntuación en tu dispositivo y compartirla."
+    },
+    {
+      "q": "¿Qué hago si la aplicación no funciona correctamente o encuentro un error?",
+      "a": "Por favor contáctanos desde la pantalla de 'Configuración' o el formulario de contacto en la página de ayuda. Responderemos rápidamente."
+    }
+  ],
+  "home_title": "Analizador de Saque de Tenis",
+  "home_select_video": "Seleccionar un video",
+  "home_select_from_gallery": "Elegir video de la galería",
+  "home_take_photo": "Grabar con la cámara",
+  "home_start_analysis": "Iniciar análisis",
+  "home_reset": "Restablecer",
+  "home_ready": "Listo para analizar",
+  "home_selected_file": "Archivo seleccionado:",
+  "home_input_concern_label": "Describe tus dudas aquí (opcional)",
+  "home_input_concern_label2":"Puntos a comentar (opcional)",
+  "home_premium_label": "Premium (Consejos de IA detallados)",
+  "home_free_label": "Modo gratuito (Solo análisis simple)",
+  "home_guide": "Guía de grabación",
+  "home_note": "Formatos compatibles: MP4, AVI, MOV, MKV (Máx 100MB)",
+  "home_free_remaining": "Análisis gratuitos restantes hoy:",
+  "home_analyzing": "Analizando...",
+  "home_invalid_result": "Formato de resultado no válido",
+  "home_error_analyze": "Ocurrió un error durante el análisis. Por favor, inténtalo de nuevo.",
+  "home_error_retry": "Por favor, inténtalo de nuevo",
+  "home_guide_footer": "Para un análisis preciso, siga la guía.",
+
+  "skin_simple": "Sencillo",
+  "skin_genz": "Pop",
+  "skin_earth": "Tierra",
+  "skin_mint": "Menta",
+  "skin_retro": "Retro",
+  "skin_gradient_blue": "Gradiente Azul",
+  "skin_gradient_red": "Gradiente Rojo",
+  "skin_gradient_purple": "Gradiente Púrpura",
+  "skin_gradient_green": "Gradiente Verde",
+  "skin_gradient_sunset": "Gradiente Atardecer",
+  "skin_gradient_rainbow": "Gradiente Arcoíris",
+  "skin_gradient_neon": "Neón Pulsante",
+  "skin_gradient_strobe": "Neón Estroboscópico",
+  "skin_gradient_aurora": "Aurora Boreal",
+  "skin_gradient_candy": "Caramelo Pop",
+  
+  "settings_header": "Configuración",
+  "tab_home": "Inicio",
+  "tab_settings": "Configuración",
+  "result_header": "Resultado",
+  "faq_header": "Preguntas Frecuentes (FAQ)",
+  "detailed_advice_premium_only": "Los consejos detallados están disponibles solo para usuarios premium." 
+}
