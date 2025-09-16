@@ -1,9 +1,5 @@
 import axios from 'axios';
-
-// 開発時はローカル、本番時は適切なURLに変更
-const API_BASE_URL = __DEV__
-  ? 'http://192.168.10.117:5001'
-  : 'https://tennis-serve-analyzer-professional-1.onrender.com';
+const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com';
 
 class ApiService {
   constructor() {

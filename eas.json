@@ -1,12 +1,30 @@
 {
   "build": {
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal"
-    },
     "preview": {
-      "distribution": "internal"
+      "distribution": "store",
+      "ios": {
+        "simulator": false
+      }
     },
-    "production": {}
+    "production": {
+      "distribution": "store",
+      "ios": {
+        "simulator": false
+      }
+    }
+  },
+  "submit": {
+    "preview": {
+      "ios": {
+        "ascAppId": "6752566202",
+        "appleTeamId": "ZB3NZXVH3T"
+      }
+    },
+    "production": {
+      "ios": {
+        "ascAppId": "6752566202",
+        "appleTeamId": "ZB3NZXVH3T"
+      }
+    }
   }
 }
