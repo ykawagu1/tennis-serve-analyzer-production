@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+// 開発時はローカル、本番時は適切なURLに変更
 const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com';
 
 class ApiService {

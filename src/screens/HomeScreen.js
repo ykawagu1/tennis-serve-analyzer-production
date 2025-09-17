@@ -16,7 +16,7 @@ import { useSkin } from '../SkinContext';
 import AnimatedGradientBackground from '../components/AnimatedGradientBackground';
 import { BannerAd, BannerAdSize, InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
 
-const API_BASE_URL = 'http://192.168.10.117:5001';
+const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com';
 const FREE_LIMIT = 3;
 const INTERSTITIAL_SHOWN_KEY = 'interstitial_shown_date';
 
@@ -175,6 +175,11 @@ const HomeScreen = ({ navigation }) => {
           Alert.alert(t('file_size_error_title'), t('file_size_error_message'));
           return;
         }
+
+        console.log(">>> file object:", file);
+        console.log(">>> file.uri:", file.uri);
+
+
         setSelectedFile({
           uri: file.uri,
           name: file.fileName || `video_${Date.now()}.mp4`,
