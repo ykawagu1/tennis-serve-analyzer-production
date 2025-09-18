@@ -15,7 +15,9 @@ import { useTranslation } from 'react-i18next';
 import { captureRef } from 'react-native-view-shot';
 import * as Sharing from 'expo-sharing';
 import * as FileSystem from 'expo-file-system';
-import { API_BASE_URL } from '../services/apiService';
+import ApiService from '../services/apiService';
+
+const api = new ApiService();
 
 
 // ...グラデーション背景 import（省略せずすべて）
@@ -334,7 +336,7 @@ const formatAIResponse = (text, textColor = '#fff') => {
                     {locale === 'ja' ? `ポーズ ${idx + 1}` : `Pose ${idx + 1}`}
                   </Text>
                   <Image
-                      source={{ uri: API_BASE_URL + img }}
+                    source={{ uri: api.client.defaults.baseURL.replace('/api', '') + img }}
                     style={{
                       width: 220,
                       height: 140,

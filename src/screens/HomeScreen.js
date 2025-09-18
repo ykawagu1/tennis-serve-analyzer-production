@@ -17,6 +17,7 @@ import AnimatedGradientBackground from '../components/AnimatedGradientBackground
 import { BannerAd, BannerAdSize, InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
 import ApiService from '../services/apiService';
 
+const api = new ApiService();
 const FREE_LIMIT = 3;
 const INTERSTITIAL_SHOWN_KEY = 'interstitial_shown_date';
 
@@ -296,7 +297,7 @@ const HomeScreen = ({ navigation }) => {
 
         console.log('[API] POST', `${API_BASE_URL}/api/analyze`);
 
-        const response = await axios.post(`${API_BASE_URL}/api/analyze`, formData, {
+          const response = await api.client.post('/analyze', formData, {
           headers: { 'Content-Type': 'multipart/form-data' },
           timeout: 120000,
         });
