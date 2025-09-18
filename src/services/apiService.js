@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// 開発時はローカル、本番時は適切なURLに変更
-const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com';
+// 本番URLを /api まで含める
+const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com/api';
 
 class ApiService {
   constructor() {
@@ -9,9 +9,10 @@ class ApiService {
 
     this.client = axios.create({
       baseURL: API_BASE_URL,
-      timeout: 300000, // 5分のタイムアウト（動画解析は時間がかかる可能性があるため）
+      timeout: 300000, // 5分のタイムアウト
     });
   }
+}
 
   /**
    * 動画解析APIを呼び出す

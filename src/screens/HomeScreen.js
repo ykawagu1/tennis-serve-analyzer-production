@@ -15,8 +15,8 @@ import { useTranslation } from 'react-i18next';
 import { useSkin } from '../SkinContext';
 import AnimatedGradientBackground from '../components/AnimatedGradientBackground';
 import { BannerAd, BannerAdSize, InterstitialAd, AdEventType, TestIds } from 'react-native-google-mobile-ads';
+import ApiService from '../services/apiService';
 
-const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com';
 const FREE_LIMIT = 3;
 const INTERSTITIAL_SHOWN_KEY = 'interstitial_shown_date';
 
