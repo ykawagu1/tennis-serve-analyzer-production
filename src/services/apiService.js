@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { Alert } from 'react-native';
 
 // 本番URLを /api まで含める
-const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com/api';
+export const API_BASE_URL = 'https://tennis-serve-analyzer-professional-1.onrender.com/api';
 
 class ApiService {
   constructor() {
@@ -12,7 +13,6 @@ class ApiService {
       timeout: 300000, // 5分のタイムアウト
     });
   }
-}
 
   /**
    * 動画解析APIを呼び出す
@@ -36,7 +36,7 @@ class ApiService {
       formData.append('use_chatgpt', options.useChatGPT ? 'true' : 'false');
       formData.append('user_concerns', options.userConcerns || '');
 
-      // is_premium（有料フラグ）があれば追加
+      // is_premium（有料フラグ）
       if ('useChatGPT' in options) {
         formData.append('is_premium', options.useChatGPT ? 'true' : 'false');
       }
@@ -49,7 +49,6 @@ class ApiService {
       // ---- デバッグ: formDataの全項目を列挙表示 ----
       console.log('------ 送信するformData内容 ------');
       for (let pair of formData.entries()) {
-        // ファイルは大きすぎるので型だけ表示
         if (pair[0] === 'video') {
           console.log('video: { ...省略（file object）... }');
         } else {
@@ -59,9 +58,7 @@ class ApiService {
       console.log('-------------------------------');
 
       const config = {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
+        headers: { 'Content-Type': 'multipart/form-data' },
       };
 
       // アップロード進捗コールバックを設定
@@ -72,13 +69,14 @@ class ApiService {
         };
       }
 
-      console.log('>>> analyzeVideo POST', this.client.defaults.baseURL + '/api/analyze');
+      // ✅ `/api/analyze` ではなく `/analyze` に統一
+      console.log('>>> analyzeVideo POST', this.client.defaults.baseURL + '/analyze');
+      Alert.alert('POST先URL', this.client.defaults.baseURL + '/analyze');
 
-      const response = await this.client.post('/api/analyze', formData, config);
+      const response = await this.client.post('/analyze', formData, config);
 
       console.log('>>> API response:', response);
 
-      // レスポンスの検証
       if (response.data && response.data.success && response.data.result) {
         return response.data.result;
       } else {
@@ -86,7 +84,7 @@ class ApiService {
       }
     } catch (error) {
       console.error('API Error:', error);
-      alert('API Error: ' + JSON.stringify(error));
+      Alert.alert('API Error', JSON.stringify(error));
 
       if (error.response?.data?.error) {
         throw new Error(`解析エラー: ${error.response.data.error}`);
@@ -100,7 +98,7 @@ class ApiService {
 
   /**
    * サーバーの健康状態をチェック
-   * @returns {Promise<boolean>} サーバーが正常かどうか
+   * @returns {Promise<boolean>}
    */
   async checkHealth() {
     try {
@@ -115,13 +113,11 @@ class ApiService {
   /**
    * APIキーの有効性をチェック
    * @param {string} apiKey - OpenAI APIキー
-   * @returns {Promise<boolean>} APIキーが有効かどうか
+   * @returns {Promise<boolean>}
    */
   async validateApiKey(apiKey) {
     try {
-      const response = await this.client.post('/api/validate-key', {
-        api_key: apiKey,
-      });
+      const response = await this.client.post('/validate-key', { api_key: apiKey });
       return response.data.valid === true;
     } catch (error) {
       console.error('API key validation failed:', error);
