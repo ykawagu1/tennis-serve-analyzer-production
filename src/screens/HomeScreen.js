@@ -53,7 +53,7 @@ const HomeScreen = ({ navigation }) => {
   const currentLang = i18n.language;
 
   useEffect(() => {
-    console.log('[BOOT] API_BASE_URL =', API_BASE_URL);
+    console.log('[BOOT] API_BASE_URL =', api.client.defaults.baseURL);
   }, []);
 
   // Interstitial lifecycle
@@ -295,7 +295,7 @@ const HomeScreen = ({ navigation }) => {
         formData.append('use_chatgpt', isPremium ? 'true' : 'false'); // 明示
         formData.append('language', currentLang);
 
-        console.log('[API] POST', `${API_BASE_URL}/api/analyze`);
+        console.log('[API] POST', api.client.defaults.baseURL + '/analyze');
 
           const response = await api.client.post('/analyze', formData, {
           headers: { 'Content-Type': 'multipart/form-data' },

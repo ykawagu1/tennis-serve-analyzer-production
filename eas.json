@@ -8,6 +8,7 @@
     },
     "production": {
       "distribution": "store",
+      "credentialsSource": "local",
       "ios": {
         "simulator": false
       }

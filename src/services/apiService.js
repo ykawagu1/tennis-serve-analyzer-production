@@ -127,4 +127,4 @@ class ApiService {
 }
 
 // シングルトンインスタンスをエクスポート
-export default new ApiService();
+export default ApiService;

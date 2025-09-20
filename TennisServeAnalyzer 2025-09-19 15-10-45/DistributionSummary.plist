@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TennisServeAnalyzer.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>100</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>00AE5A1B28A541D2EE920DF167614C41D7214842</string>
+				<key>dateExpires</key>
+				<string>2026/09/19</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>ZB3NZXVH3T.com.tennisserveanalyzer.app</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>ZB3NZXVH3T</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>TennisServeAnalyzer.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>9f5c1f1f-102a-4611-8c2b-c733a727a24f</string>
+				<key>dateExpires</key>
+				<string>2026/09/19</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.tennisserveanalyzer.app</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>ZB3NZXVH3T</string>
+				<key>name</key>
+				<string>Yasushi Kawaguchi</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0.2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
