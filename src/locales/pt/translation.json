@@ -19,7 +19,7 @@
     },
     {
       "q": "Quanto custa o plano premium e como faço o pagamento?",
-      "a": "O plano premium custa €2 por mês (ou €19 por ano com desconto) ou R$10 por mês (ou R$95 por ano com desconto). O pagamento é feito por assinatura através da App Store ou Google Play."
+      "a": "O plano premium custa €2  por mês (ou €20 por ano com desconto) ou R$10 por mês (ou R$95 por ano com desconto). O pagamento é feito por assinatura através da App Store ou Google Play."
     },
     {
       "q": "O que devo fazer se os conselhos da IA ou as pontuações não forem exibidos?",
@@ -82,5 +82,26 @@
   "tab_settings": "Configurações",
   "result_header": "Resultado",
   "faq_header": "Perguntas Frequentes (FAQ)",
-  "detailed_advice_premium_only": "Conselhos detalhados estão disponíveis apenas para usuários premium." 
+  "detailed_advice_premium_only": "Conselhos detalhados estão disponíveis apenas para usuários premium." ,
+  "premium": {
+  "title": "Informações Premium",
+  "upgrade": "🎾 Atualizar para Premium",
+  "monthly": "€2 / mês ou R$10 / mês ",
+  "yearly": "€20 / ano ou R$95 / ano",
+  "benefits_title": "Benefícios do Premium",
+  "benefit_1": "Sem anúncios",
+  "benefit_2": "Análises ilimitadas",
+  "benefit_3": "Conselhos detalhados da IA",
+  "benefit_4": "Acesso a skins exclusivos",
+  "restore": "Restaurar compra",
+  "terms": "Termos de serviço",
+  "privacy": "Política de privacidade",
+  "already_premium": "Você já é um membro Premium.",
+  "purchase_error": "Ocorreu um erro durante a compra. Tente novamente.",
+  "restore_success": "Compra restaurada com sucesso. Os recursos Premium estão disponíveis.",
+  "restore_error": "Falha ao restaurar a compra. Tente novamente.",
+  "cancel_title": "Como cancelar o Premium",
+  "cancel_message": "Você pode cancelar o Premium nas configurações de assinatura da App Store ou Google Play. Após o cancelamento, os recursos Premium permanecem disponíveis até o final do período de faturamento.",
+  "ok": "OK"
+}
 }

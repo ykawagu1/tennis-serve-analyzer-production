@@ -22,7 +22,7 @@ const FREE_LIMIT = 3;
 const INTERSTITIAL_SHOWN_KEY = 'interstitial_shown_date';
 
 const HomeScreen = ({ navigation }) => {
-  const { skin, skinStyle, skinKey, isPremium, setIsPremium } = useSkin();
+  const { skin, skinStyle, skinKey, isPremium} = useSkin();
   const [selectedFile, setSelectedFile] = useState(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [isSelecting, setIsSelecting] = useState(false);
@@ -443,12 +443,7 @@ const HomeScreen = ({ navigation }) => {
                     multiline
                   />
                 )}
-                <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 12 }}>
-                  <Switch value={isPremium} onValueChange={setIsPremium} />
-                  <Text style={{ marginLeft: 8 }}>
-                    {isPremium ? t('home_premium_label') : t('home_free_label')}
-                  </Text>
-                </View>
+               
                 <View style={styles.guideButtonContainer}>
                   <Button
                     mode="outlined"
@@ -509,12 +504,7 @@ const HomeScreen = ({ navigation }) => {
                     multiline
                   />
                 )}
-                <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 12 }}>
-                  <Switch value={isPremium} onValueChange={setIsPremium} />
-                  <Text style={{ marginLeft: 8 }}>
-                    {isPremium ? t('home_premium_label') : t('home_free_label')}
-                  </Text>
-                </View>
+               
                 <View style={styles.buttonContainer}>
                   <Button mode="contained" onPress={handleAnalyze} style={styles.button} icon="play">
                     {t('home_start_analysis')}

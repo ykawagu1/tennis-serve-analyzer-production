@@ -19,7 +19,7 @@
     },
     {
       "q": "¿Cuánto cuesta el plan premium y cómo pago?",
-      "a": "El plan premium cuesta 2 € al mes (o 18 € al año con descuento). El pago se realiza mediante suscripción a través de la App Store o Google Play."
+      "a": "El plan premium cuesta € 2 al mes o $ 2 al mes (€ 20  o $ 20 al año con descuento). El pago se gestiona mediante suscripción a través de la App Store o Google Play."
     },
     {
       "q": "¿Qué hago si los consejos de IA o las puntuaciones no se muestran?",
@@ -82,5 +82,26 @@
   "tab_settings": "Configuración",
   "result_header": "Resultado",
   "faq_header": "Preguntas Frecuentes (FAQ)",
-  "detailed_advice_premium_only": "Los consejos detallados están disponibles solo para usuarios premium." 
+  "detailed_advice_premium_only": "Los consejos detallados están disponibles solo para usuarios premium." ,
+  "premium": {
+  "title": "Información Premium",
+  "upgrade": "🎾 Actualizar a Premium",
+  "monthly": "€ 2 / mes o $ 2 /mes",
+  "yearly": "€ 20 / año o $ 20 /año",
+  "benefits_title": "Beneficios de Premium",
+  "benefit_1": "Sin anuncios",
+  "benefit_2": "Análisis ilimitados",
+  "benefit_3": "Consejos detallados de la IA",
+  "benefit_4": "Acceso a skins exclusivos",
+  "restore": "Restaurar compra",
+  "terms": "Términos de servicio",
+  "privacy": "Política de privacidad",
+  "already_premium": "Ya eres miembro Premium.",
+  "purchase_error": "Se produjo un error durante la compra. Inténtalo de nuevo.",
+  "restore_success": "Compra restaurada con éxito. Las funciones Premium están disponibles.",
+  "restore_error": "Error al restaurar la compra. Inténtalo de nuevo.",
+  "cancel_title": "Cómo cancelar Premium",
+  "cancel_message": "Puedes cancelar Premium desde la gestión de suscripciones en App Store o Google Play. Después de la cancelación, las funciones Premium seguirán disponibles hasta el final del período de facturación.",
+  "ok": "OK"
+}
 }

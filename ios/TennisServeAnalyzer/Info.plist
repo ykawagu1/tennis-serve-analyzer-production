@@ -39,7 +39,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>300</string>
+	<string>310</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9369357231963053~4011983268</string>
 	<key>GADDelayAppMeasurementInit</key>

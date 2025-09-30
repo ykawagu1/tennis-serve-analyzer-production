@@ -19,7 +19,7 @@
     },
     {
       "q": "Combien coûte le plan premium et comment payer ?",
-      "a": "Le plan premium coûte 2 € par mois (ou 19 € par an à tarif réduit). Le paiement se fait par abonnement via l’App Store ou Google Play."
+      "a": "Le plan premium coûte € 2 par mois (ou € 20 par an à tarif réduit). Le paiement se fait par abonnement via l’App Store ou Google Play."
     },
     {
       "q": "Que faire si les conseils de l’IA ou les scores ne s’affichent pas ?",
@@ -81,5 +81,26 @@
   "tab_settings": "Paramètres",
   "result_header": "Résultat",
   "faq_header": "FAQ",
-  "detailed_advice_premium_only": "Les conseils détaillés sont disponibles uniquement pour les utilisateurs premium."
+  "detailed_advice_premium_only": "Les conseils détaillés sont disponibles uniquement pour les utilisateurs premium.",
+  "premium": {
+  "title": "Infos Premium",
+  "upgrade": "🎾 Passer à Premium",
+  "monthly": "€ 2 / mois",
+  "yearly": "€ 20 / an",
+  "benefits_title": "Avantages Premium",
+  "benefit_1": "Sans publicités",
+  "benefit_2": "Analyses illimitées",
+  "benefit_3": "Conseils détaillés de l'IA",
+  "benefit_4": "Accès aux skins exclusifs",
+  "restore": "Restaurer l'achat",
+  "terms": "Conditions d'utilisation",
+  "privacy": "Politique de confidentialité",
+  "already_premium": "Vous êtes déjà membre Premium.",
+  "purchase_error": "Une erreur est survenue lors de l'achat. Veuillez réessayer.",
+  "restore_success": "Achat restauré avec succès. Les fonctionnalités Premium sont disponibles.",
+  "restore_error": "Échec de la restauration de l'achat. Veuillez réessayer.",
+  "cancel_title": "Comment annuler Premium",
+  "cancel_message": "Vous pouvez annuler Premium dans les paramètres d'abonnement de l'App Store ou de Google Play. Après annulation, les fonctionnalités Premium restent disponibles jusqu'à la fin de la période d'abonnement.",
+  "ok": "OK"
+}
 }

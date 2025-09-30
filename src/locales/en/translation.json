@@ -19,7 +19,7 @@
     },
     {
       "q": "How much does the premium plan cost, and how do I pay?",
-      "a": "The premium plan costs £1.50 per month (or £15 per year for a discounted rate) or $2 per month (or $19 per year for a discounted rate). Payment is made via a subscription through the App Store or Google Play."
+      "a": "The premium plan costs £1.50 per month (or £15 per year for a discounted rate) or $2 per month (or $20 per year for a discounted rate). Payment is made via a subscription through the App Store or Google Play."
     },
     {
       "q": "What should I do if AI advice or scores are not displayed?",
@@ -115,5 +115,26 @@
   "tab_settings": "Settings",
   "result_header": "Result",
   "faq_header": "FAQ",
-  "detailed_advice_premium_only": "Detailed advice is only available for premium users."
+  "detailed_advice_premium_only": "Detailed advice is only available for premium users.",
+  "premium": {
+  "title": "Premium Info",
+  "upgrade": "🎾 Upgrade to Premium",
+  "monthly": "£1.50 / month  or $2 / month",
+  "yearly": "£15 / year or $20 / year",
+  "benefits_title": "Premium Benefits",
+  "benefit_1": "No advertisements",
+  "benefit_2": "Unlimited analyses",
+  "benefit_3": "Detailed AI advice",
+  "benefit_4": "Access to premium skins",
+  "restore": "Restore Purchase",
+  "terms": "Terms of Service",
+  "privacy": "Privacy Policy",
+  "already_premium": "You are already a Premium member.",
+  "purchase_error": "An error occurred during purchase. Please try again.",
+  "restore_success": "Purchase restored successfully. Premium features are now available.",
+  "restore_error": "Failed to restore purchase. Please try again.",
+  "cancel_title": "How to Cancel Premium",
+  "cancel_message": "You can cancel Premium from your App Store or Google Play subscription settings. After cancellation, Premium features remain available until the end of the billing period.",
+  "ok": "OK"
+}
 }

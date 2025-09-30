@@ -57,7 +57,7 @@ const MainTabNavigator = () => {
         component={SettingsScreen}
         options={{
           title: t('settings_header'),
-          tabBarLabel: t('tab_settings'),
+          tabBarLabel: t('tab_settings')+ '・' + t('premium.title'),
         }}
       />
     </Tab.Navigator>
@@ -103,6 +103,18 @@ const MainStackNavigator = () => {
           headerTitleStyle: { fontWeight: 'bold', fontSize: 18 },
         }}
       />
+    <Stack.Screen
+        name="Premium"
+        component={PremiumScreen}
+        options={{
+       title: t('premium.title'),
+  }}
+/>
+
+
+
+
+
     </Stack.Navigator>
   );
 };

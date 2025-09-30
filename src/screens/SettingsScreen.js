@@ -7,12 +7,12 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Application from 'expo-application';
 import * as Device from 'expo-device';
 import Toast from 'react-native-toast-message';
-import { useTranslation } from 'react-i18next'; // ★ここを追加
+import { useTranslation } from 'react-i18next';
 import apiService from '../services/apiService';
 import { useSkin, SKINS } from '../SkinContext';
 
 const SettingsScreen = ({ navigation }) => {
-  const { t } = useTranslation(); // ★ここを追加
+  const { t } = useTranslation();
   const { skinKey, setSkinKey, isPremium, setIsPremium } = useSkin();
   const [enableNotifications, setEnableNotifications] = useState(true);
   const [serverStatus, setServerStatus] = useState('checking');
@@ -143,26 +143,32 @@ const SettingsScreen = ({ navigation }) => {
           </Card.Content>
         </Card>
 
-        {/* プレミアム切替 */}
+        {/* プレミアム案内 */}
         <Card style={styles.card}>
           <Card.Content>
-            <Text style={styles.cardTitle}>{t('settings_mode_switch')}</Text>
+            <Text style={styles.cardTitle}>{t('premium.title')}</Text>
             <Divider style={styles.divider} />
-            <View style={styles.settingItem}>
-              <Text style={styles.settingLabel}>
-                {isPremium ? t('settings_premium_mode') : t('settings_free_mode')}
+            {isPremium ? (
+              <Text style={{ color: '#4caf50', fontSize: 16, fontWeight: 'bold' }}>
+                {t('premium.already_premium')}
               </Text>
-              <Switch
-                value={isPremium}
-                onValueChange={setIsPremium}
-                trackColor={{ false: '#767577', true: '#ffd600' }}
-                thumbColor={isPremium ? '#ffd600' : '#f4f3f4'}
-              />
-            </View>
-            {!isPremium && (
-              <Text style={{ color: '#888', marginTop: 8, fontSize: 13 }}>
-                {t('settings_premium_hint')}
-              </Text>
+            ) : (
+              <>
+                <Text style={{ color: '#888', marginBottom: 8, fontSize: 13 }}>
+                  {t('settings_premium_hint')}
+                </Text>
+                <Button
+                  mode="contained"
+                  style={styles.premiumButton}
+                  icon="crown"
+                  onPress={() => navigation.navigate('Premium')}
+                >
+                  {t('premium.upgrade')}
+                </Button>
+                <Text style={{ color: '#555', marginTop: 8, fontSize: 13 }}>
+                  {t('premium.monthly')} / {t('premium.yearly')}
+                </Text>
+              </>
             )}
           </Card.Content>
         </Card>
@@ -195,12 +201,7 @@ const SettingsScreen = ({ navigation }) => {
                     uncheckedColor={disabled ? '#ccc' : undefined}
                     color={disabled ? '#ccc' : '#1976d2'}
                   />
-                  <Text
-                    style={[
-                      styles.skinLabel,
-                      disabled && { color: '#aaa' },
-                    ]}
-                  >
+                  <Text style={[styles.skinLabel, disabled && { color: '#aaa' }]}>
                     {t(option.nameKey)}
                     {option.premiumOnly && (
                       <Text style={{ color: disabled ? '#bbb' : '#e53935', fontSize: 13 }}>
@@ -277,7 +278,7 @@ const SettingsScreen = ({ navigation }) => {
           </Card.Content>
         </Card>
 
-        {/* アクション */}
+        {/* 保存 / リセット アクション */}
         <View style={styles.buttonContainer}>
           <Button mode="contained" onPress={saveSettings} style={styles.button} icon="content-save">
             {t('settings_save_btn')}
@@ -312,6 +313,11 @@ const styles = StyleSheet.create({
   faqContainer: { marginVertical: 16, alignItems: 'center' },
   faqButton: { borderColor: '#1976d2' },
   faqNote: { fontSize: 13, color: '#555', textAlign: 'center', marginTop: 4 },
+  premiumButton: {
+    marginTop: 12,
+    backgroundColor: '#1976d2',
+    borderRadius: 8,
+  },
 });
 
 export default SettingsScreen;

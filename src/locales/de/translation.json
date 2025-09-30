@@ -19,7 +19,7 @@
     },
     {
       "q": "Wie viel kostet der Premium-Plan und wie bezahle ich?",
-      "a": "Der Premium-Plan kostet 2 € pro Monat (oder 19 € pro Jahr zum ermäßigten Preis). Die Bezahlung erfolgt per Abonnement über den App Store oder Google Play."
+      "a": "Der Premium-Plan kostet € 2 pro Monat (oder € 20 pro Jahr zum ermäßigten Preis). Die Bezahlung erfolgt per Abonnement über den App Store oder Google Play."
     },
     {
       "q": "Was soll ich tun, wenn KI-Ratschläge oder Punkte nicht angezeigt werden?",
@@ -82,6 +82,27 @@
   "tab_settings": "Einstellungen",
   "result_header": "Ergebnis",
   "faq_header": "FAQ",
-  "detailed_advice_premium_only": "Detaillierte Ratschläge sind nur für Premium-Nutzer verfügbar."
+  "detailed_advice_premium_only": "Detaillierte Ratschläge sind nur für Premium-Nutzer verfügbar.",
+  "premium": {
+  "title": "Premium-Info",
+  "upgrade": "🎾 Auf Premium upgraden",
+  "monthly": "€ 2 / Monat",
+  "yearly": "€ 20 / Jahr",
+  "benefits_title": "Premium-Vorteile",
+  "benefit_1": "Keine Werbung",
+  "benefit_2": "Unbegrenzte Analysen",
+  "benefit_3": "Detaillierte KI-Ratschläge",
+  "benefit_4": "Zugang zu exklusiven Skins",
+  "restore": "Kauf wiederherstellen",
+  "terms": "Nutzungsbedingungen",
+  "privacy": "Datenschutzrichtlinie",
+  "already_premium": "Sie sind bereits Premium-Mitglied.",
+  "purchase_error": "Beim Kauf ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+  "restore_success": "Kauf erfolgreich wiederhergestellt. Premium-Funktionen sind jetzt verfügbar.",
+  "restore_error": "Fehler beim Wiederherstellen des Kaufs. Bitte versuchen Sie es erneut.",
+  "cancel_title": "So kündigen Sie Premium",
+  "cancel_message": "Sie können Premium in den Abonnement-Einstellungen des App Store oder Google Play kündigen. Nach der Kündigung bleiben die Premium-Funktionen bis zum Ende des Abrechnungszeitraums verfügbar.",
+  "ok": "OK"
+}
 
 }
