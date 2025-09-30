@@ -11,7 +11,7 @@ import Toast from 'react-native-toast-message';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useTranslation } from 'react-i18next';
 import mobileAds from 'react-native-google-mobile-ads';
-
+import PremiumScreen from './src/screens/PremiumScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import ResultScreen from './src/screens/ResultScreen';
 import SettingsScreen from './src/screens/SettingsScreen';
